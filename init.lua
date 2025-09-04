@@ -912,6 +912,12 @@ require('lazy').setup({
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
       vim.cmd.colorscheme 'onedark'
+      
+      -- dropbar color tweaks
+      vim.api.nvim_set_hl(0, 'DropBarMenuCurrentContext', { link = 'DropBarCurrentContext' })
+      vim.api.nvim_set_hl(0, 'DropBarMenuHoverEntry', { link = 'DropBarHover' })
+      vim.api.nvim_set_hl(0, 'WinBar', { link = 'Normal' })
+      vim.api.nvim_set_hl(0, 'WinBarNC', { link = 'Normal' })
     end,
   },
 
