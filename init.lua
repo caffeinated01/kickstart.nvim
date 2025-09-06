@@ -867,7 +867,7 @@ require('lazy').setup({
       completion = {
         -- By default, you may press `<c-space>` to show the documentation.
         -- Optionally, set `auto_show = true` to show the documentation after a delay.
-        documentation = { auto_show = false, auto_show_delay_ms = 500 },
+        documentation = { auto_show = true, auto_show_delay_ms = 500 },
       },
 
       sources = {
@@ -912,7 +912,7 @@ require('lazy').setup({
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
       vim.cmd.colorscheme 'onedark'
-      
+
       -- dropbar color tweaks
       vim.api.nvim_set_hl(0, 'DropBarMenuCurrentContext', { link = 'DropBarCurrentContext' })
       vim.api.nvim_set_hl(0, 'DropBarMenuHoverEntry', { link = 'DropBarHover' })
